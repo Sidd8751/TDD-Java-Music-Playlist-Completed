@@ -30,7 +30,6 @@ public class PlaylistTest {
 	@Before
 	public void testSetup() {
 		myPlaylist = new Playlist();
-		System.out.println("setup called");
 	}
 
 	@Test
