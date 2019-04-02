@@ -8,9 +8,9 @@ import main.java.Song;
 public class SongTest {
 	@Test
 	public void getPrettyDurationTest() {
-		Song mySong = new Song("Title","Artist",Duration.ofSeconds(244));
+		Song mySong = new Song("Title","Artist",Duration.ofSeconds(205));
 		String prettyResult = mySong.getDurationPretty();
-		String expectedResult = String.format("%d:%02d:%02d", 0,4,4);
+		String expectedResult = String.format("%d:%02d:%02d", 0,3,25);
 		assertEquals("getDurationPretty should convert a song's duration in seconds into the format mm:ss",prettyResult,expectedResult);
 	}
 		
